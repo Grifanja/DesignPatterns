@@ -10,14 +10,6 @@ class PropertyContainer implements PropertyContainerInterface
     private $propertyContainer = [];
 
     /**
-     * @return string
-     */
-    public static function getDescription(): string
-    {
-        return '';
-    }
-
-    /**
      * @param string $propertyName
      * @param $value
      */

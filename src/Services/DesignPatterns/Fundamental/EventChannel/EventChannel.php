@@ -21,7 +21,7 @@ class EventChannel implements EventChannelInterface
      */
     public function publish(string $topic, string $data): EventChannel
     {
-        foreach ((array)$this->topics[$topic] as $subscriber){
+        foreach ($this->topics[$topic] ?? [] as $subscriber){
             $subscriber->notify($data);
         }
         return $this;

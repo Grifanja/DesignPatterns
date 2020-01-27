@@ -31,7 +31,6 @@ class AppMessenger implements MessengerInterface
         return $this;
     }
 
-
     /**
      * @param string $value
      * @return MessengerInterface
